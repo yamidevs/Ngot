@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C25C899F-F8C1-44F3-AF6F-19FD77342CC4}</ProjectGuid>
+    <ProjectGuid>{74212656-6923-46AF-B270-09DE193474D4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ngot.Messages</RootNamespace>
-    <AssemblyName>Ngot.Messages</AssemblyName>
+    <RootNamespace>Ngot.Message</RootNamespace>
+    <AssemblyName>Ngot.Message</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,17 +40,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Auth\HelloMessages.cs" />
+    <Compile Include="Auth\ProtocolRequired.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="World\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Ngot.Common\Ngot.Common.csproj">
       <Project>{1274bbaf-33b7-4a93-8254-10e028c9d3c0}</Project>
       <Name>Ngot.Common</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="World\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
